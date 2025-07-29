@@ -1,0 +1,14 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.pg-marker{
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(90deg ,yellowgreen, black);
+    border-radius: 10px;
+}
