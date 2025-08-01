@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prod1</title>
+    <link rel="stylesheet" href="prodstyle/nutritable.css">
+    <link rel="stylesheet" href="prodstyle/cabecalho.css">
+    <link rel="stylesheet" href="prodstyle/opcoes.css">
+    <link rel="stylesheet" href="prodstyle/prod-general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <div id="cabecalho">
+            <div class="left-side">
+                <img id="logo" src="imagens/logo.png" alt="">
+                <h1 id="marca">ZenForce</h1>
+            </div>
+
+            <div id="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Buscar Produto">
+                <button onclick="search()" id="btn-pesquisa">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="right-side">
+                <a class="link-ico" href="">
+                    <i class="fas fa-user"></i>
+                    <span>Cadastre-se</span>
+                </a>
+            </div>
+
+            <div class="post-right">
+                <a class="link-ico" href="">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span>Carrinho de Compras</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="opcoes">
+            <a href="">Whey Protein</a>
+            <a href="">Creatina</a>
+            <a href="">Pré-Treino</a>
+            <a href="">Moda</a>
+            <a href="">Acessórios</a>
+        </div>
+    </section>
+
+    <div class="product-page">
+        <div class="benefits">
+            <h1>O MELHOR AUXÍLIO PARA SEU DESENVOLVIMENTO MUSCULAR</h1>
+            <div class="single-benefit">
+                <img class="prod-icon" src="../imagens/produtos/icones/icon-01.svg" alt="">
+                <span>AUXILIA A RECUPERAÇÂO MUSCULAR</span>
+            </div>
+            <div class="single-benefit">
+                <img class="prod-icon" src="../imagens/produtos/icones/icon-02.svg" alt="">
+                <span>A creatina auxilia no aumento do desempenho físico durante exercícios repetidos de curta duração e
+                    alta intensidade.</span>
+            </div>
+            <div class="single-benefit">
+                <img class="prod-icon" src="../imagens/produtos/icones/icon-03.svg" alt="">
+                <span>Auxilia na formação de energia para treinos de alta intensidade.</span>
+            </div>
+        </div>
+
+        <div class="product-image">
+            <img src="../imagens/produtos/mockup.webp" alt="">
+        </div>
+
+        <div class="product-card">
+            <h2>KIT CREATINA MONOHIDRATADA 500G - GROWTH SUPPLEMENTS</h2>
+            <a href="">Veja a tabela nutricional</a>
+            <p>Qualidade internacional e preço de fábrica</p>
+            <p class="price">R$79,89</p>
+            <p>NO BOLETO OU PIX</p>
+            <p class="parcelado">ou R$88,76 em até 6x de R$14,79</p>
+            <button class="buy-btn">COMPRAR</button>
+            <p class="stock">EM ESTOQUE. ENVIO IMEDIATO!</p>
+        </div>
+    </div>
+
+    <section class="nutri-info">
+        <section class="nutri-table">
+            <div clas="tabela">
+                <div class="nutri-title">
+                    <h1>TABELA NUTRICIONAL</h1>
+                </div>
+                <table cellspacing>
+                    <thead>
+                        <tr>
+                            <th class="titulo" colspan="3">INFORMAÇÂO NUTRICIONAL</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Porções por embalagem: Por volta de 83</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Porção: 3g (2 dosadores)</th>
+                        </tr>
+                        <tr class="tabela-cabecalho">
+                            <th></th>
+                            <th  class="center middle">3g</th>
+                            <th class="center">%VD*</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Valor energético (kcal)</td>
+                            <td class="middle center">0</td>
+                            <td class="center">0</td>
+                        </tr>
+                        <tr>
+                            <td>Creatina (mg)</td>
+                            <td  class="middle center" >3000</td>
+                            <td class="center">-</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                Não contém quantidades significativas de carboidratos,
+                                açúcares totais, açúcares adicionados,
+                                proteínas, gorduras totais, gorduras saturadas,
+                                gorduras trans, fibras alimentares e sódio.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">
+                                *Percentual de valores diários fornecidos pela porção
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <article class="add-info">
+            <p><b>Ingredientes:</b> Creatina monohidratada. <b>NÃO CONTÉM GLÚTEN.</b></p>
+            <p><b>RECOMENDAÇÃO DE CONSUMO:</b> Consumir 1 porção ao dia.</p>
+            <p>A sugestão de consumo apresentada na tabela é de 3g,
+                porém recentemente a ANVISA atualizou este valor,
+                hoje a dosagem máxima indicada é de 5g ao dia.</p>
+            <p>Conferindo ao consumidor maior autonomia na programação
+                diária de nutrientes.</p>
+            <p><b>SUGESTÃO DE PREPARO:</b> Dissolver 1 porção (2 dosadores)
+                do pó no líquido de sua preferência.</p>
+            <p>Este produto não deve ser consumido por gestantes, lactantes
+                e crianças.</p>
+            <p>Produto indicado para o grupo populacional ≥ 19 anos.
+                Este produto não é um medicamento.
+                Não exceder a recomendação diária de consumo
+                indicada na embalagem. Mantenha fora do alcance de crianças.</p>
+            <p><b>INSTRUÇÕES DE CONSERVAÇÃO:</b> Conservar ao abrigo de luz,
+                calor e umidade. Após aberto, consumir em até 90 dias.
+                Após o consumo, manter a embalagem bem fechada.</p>
+            <p><b>Atenção:</b> A Creatina possui característica higroscópica que
+                é a capacidade de absorver água/umidade, desta forma o produto pode
+                empedrar/empelotar, onde este fato não altera a qualidade ou resultado do produto. O consumidor
+                poderá observar o produto empedrado ao receber ou ao longo do tempo de uso.</p>
+            <p>Em caso de dúvidas sobre este produto, consulte o médico ou nutricionista.</p>
+        </article>
+
+    </section>
+
+</body>
+
+</html>
