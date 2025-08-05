@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+
+.f-general {
+    margin-top: 10px;
+    padding: 20px;
+    
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(90deg, gray, black);
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.f-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.f-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.f-info span{
+    font-size: 1.2rem;
+}
+
+.f-info i {
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}

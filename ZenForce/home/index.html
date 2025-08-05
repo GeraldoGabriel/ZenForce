@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenForce</title>
+
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navigationbar.css">
+    <link rel="stylesheet" href="styles/placeholder.css">
+    <link rel="stylesheet" href="styles/cabecalho.css">
+    <link rel="stylesheet" href="styles/opcoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="cabecalho">
+        <div class="left-side">
+            <img id="logo" src="../imagens/logo.png" alt="">
+            <h1 id="marca">ZenForce</h1>
+        </div>
+
+        <div id="barra-pesquisa">
+            <input type="text" id="pesquisa" placeholder="Buscar Produto">
+            <button onclick="search()" id="btn-pesquisa">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="right-side">
+            <a class="link-ico" href="">
+                <i class="fas fa-user"></i>
+                <span>Cadastre-se</span>
+            </a>
+        </div>
+
+        <div class="post-right">
+            <a class="link-ico" href="">
+                <i class="fas fa-cart-shopping"></i>
+                <span>Carrinho de Compras</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="opcoes">
+        <a href="">Whey Protein</a>
+        <a href="">Creatina</a>
+        <a href="">Pré-Treino</a>
+        <a href="">Moda</a>
+        <a href="">Acessórios</a>
+    </div>
+
+    <div class="divpad" id="propaganda">
+        <img id="placeholder" src="../imagens/placeholder.png" alt="">
+    </div>
+
+    <section class="benefits">
+
+        <div class="benefit-card">
+            <div class="icon-circle">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="benefit-text">
+                <span>Frete grátis acima de R$150*</span>
+                <a href="">Consulte aqui</a>
+            </div>
+        </div>
+
+        <div class="benefit-card">
+            <div class="icon-circle">
+                <i class="fas fa-barcode"></i>
+            </div>
+            <div class="benefit-text">
+                <span>Compre com 10% OFF no boleto ou PIX</span>
+            </div>
+        </div>
+
+        <div class="benefit-card">
+            <div class="icon-circle">
+                <i class="fas fa-sync-alt"></i>
+            </div>
+            <div class="benefit-text">
+                <span>Fale com nosso Nutricionista Esportivo</span>
+                <a href="">Clique aqui</a>
+            </div>
+        </div>
+
+        <div class="benefit-card">
+            <div class="icon-circle">
+                <a href="">
+                    <i class="fas fa-credit-card"></i>
+                </a>
+            </div>
+            <div class="benefit-text">
+                <span>Métodos de pagamento</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="pg-marker">
+        <h1>Onde começam seus resultados</h1>
+    </div>
+
+    <!-- PRODUTOS ----------------------------------------------------------------------------------------------------------- -->
+    <!-- Trocar chekmarks dos produtos para possíveis listas ordenadas -->
+
+    <section class="showroom">
+        <div class="prod-card">
+            <div class="prod-img">
+                <a href="../produtoshtml/prod6.html">
+                    <img id="clothing" src="../imagens/produtos/camiseta-growth-oversized-off-white-01-resize.png"
+                        alt="">
+                </a>
+            </div>
+            <div class="prod-title"><a href="../produtoshtml/prod6.html">CAMISETA GROWTH OVERSIZED OFF WHITE</a></div>
+            <div class="card-icon">
+                <ul>
+                    <li><span>TECIDO RESISTENTE</span></li>
+                    <li><span>COSTURAS REFORÇADAS</span></li>
+                    <li><span>FÁCIL LAVAGEM</span></li>
+                </ul>
+            </div>
+            <div class="prod-price">
+                <a href="../produtoshtml/prod6.html">
+                    <h1>R$ 116,90</h1>
+                </a>
+                <span>ou R$ 129,88 no cartão de crédito ou em até 6x de R$ 21,65 sem juros</span>
+            </div>
+        </div>
+
+        <div class="prod-card">
+            <div class="prod-img">
+                <a href="../produtoshtml/prod5.html">
+                    <img src="../imagens/produtos/m_dose-whey-protein-concentrado-30gr-growth-supplements-6.webp"
+                        alt="">
+                </a>
+            </div>
+            <div class="prod-title"><a href="../produtoshtml/prod5.html">DOSE WHEY PROTEIN CONCENTRADO (30G) GROWTH SUPPLEMENTS</a></div>
+            <div class="card-icon">
+                <ul>
+                    <li><span>FEITO COM SORO DO LEITE (100% WHEY)</span></li>
+                    <li><span>AUXILIA NA FORMAÇÃO DE MÚSCULOS</span></li>
+                    <li><span>PRÁTICO PARA CONSUMO NO DIA-DIA</span></li>
+                </ul>
+            </div>
+            <div class="prod-price">
+                <a href="../produtoshtml/prod5.html">
+                    <h1>R$ 5,90</h1>
+                </a>
+                <span>ou R$ 6,55 no cartão de crédito ou em até 1x de R$ 6,55 sem juros</span>
+            </div>
+        </div>
+
+        <div class="prod-card">
+            <div class="prod-img">
+                <a href="../produtoshtml/prod4.html">
+                    <img src="../imagens/produtos/mass-titanium-max-titanium-3kg-baunilha-1-resize.png" alt="">
+                </a>
+            </div>
+            <div class="prod-title"><a href="../produtoshtml/prod4.html"> HIPERCALÓRICO MASS TITANIUM REFIL (3Kg) MAXTITANIUM</a></div>
+            <div class="card-icon">
+                <ul>
+                    <li><span>30G DE PROTEÍNA POR SCOOP</span></li>
+                    <li><span>RÁPIDO GANHO DE MASSA</span></li>
+                    <li><span>AUXÍLIO NA FORMAÇÃO DOS MÚSCULOS</span></li>
+                </ul>
+            </div>
+            <div class="prod-price">
+                <a href="../produtoshtml/prod4.html">
+                    <h1>R$ 115,14</h1>
+                </a>
+                <span>ou R$ 121,20 no cartão de crédito ou em até 4x de R$ 30,30 sem juros</span>
+            </div>
+        </div>
+
+        <div class="prod-card">
+            <div class="prod-img">
+                <a href="../produtoshtml/prod3.html">
+                    <img src="../imagens/produtos/horus-max-titanium-300g-citrus-1-resize.png" alt="">
+                </a>
+            </div>
+            <div class="prod-title"><a href="../produtoshtml/prod3.html">PRÉ TREINO HORUS (300G) MAX-TITANIUM</a></div>
+            <div class="card-icon">
+                <ul>
+                    <li><span>MAIS FORÇA, RESISTÊNCIA E DESEMPENHO</span></li>
+                    <li><span>MAIS ENERGIA PARA OS TREINOS</span></li>
+                    <li><span>AUMENTO DO FOCO</span></li>
+                </ul>
+            </div>
+            <div class="prod-price">
+                <a href="../produtoshtml/prod3.html">
+                    <h1>R$ 125,30</h1>
+                </a>
+                <span>ou R$ 131,89 no cartão de crédito ou em até 4x de R$ 32,97 sem juros</span>
+            </div>
+        </div>
+
+        <div class="prod-card">
+            <div class="prod-img">
+                <a href="../produtoshtml/prod2.html">
+                    <img src="../imagens/produtos/m_top-whey-protein-concentrado-1kg-growth-supplements-3.webp" alt="">
+                </a>
+            </div>
+            <div class="prod-title"><a href="../produtoshtml/prod2.html">(TOP) Whey Protein Concentrado (1KG) - Growth Supplements</a></div>
+            <div class="card-icon">
+                <ul>
+                    <li><span>AJUDA NA HIPERTROFIA</span></li>
+                    <li><span>MELHOR CUSTO X BENEFÍCIO</span></li>
+                    <li><span>ALTA CONCENTRAÇÃO DE PROTEÍNA</span></li>
+                </ul>
+            </div>
+            <div class="prod-price">
+                <a href="../produtoshtml/prod2.html">
+                    <h1>R$ 124,90</h1>
+                </a>
+                <span>ou R$ 138,77 no cartão de crédito ou em até 6x de R$ 23,13 sem juros</span>
+            </div>
+        </div>
+
+        <div class="prod-card">
+            <div class="prod-img">
+                <a href="../produtoshtml/prod1.html">
+                    <img src="../imagens/produtos/m_kit-creatina-monohidratada-500g-growth-supplements-1.webp" alt="">
+                </a>
+            </div>
+            <div class="prod-title"><a href="../produtoshtml/prod1.html">KIT CREATINA MONOHIDRATADA GROWTH SUPPLEMENTS</a></div>
+            <div class="card-icon">
+                <ul>
+                    <li><span>ESTIMULA HIPERTROFIA</span></li>
+                    <li><span>AUXILIA RECUPERAÇÃO MUSCULAR</span></li>
+                    <li><span>AUMENTO DE FORÇA</span></li>
+                </ul>
+            </div>
+            <div class="prod-price">
+                <a href="../produtoshtml/prod1.html">
+                    <h1>R$ 79,89</h1>
+                </a>
+                <span>ou R$ 88,76 no cartão de crédito ou em até 6x de R$ 14,79 sem juros</span>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
