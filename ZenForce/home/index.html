@@ -17,46 +17,60 @@
 </head>
 
 <body>
-    <div id="cabecalho">
-        <div class="left-side">
-            <img id="logo" src="../imagens/logo.png" alt="">
-            <a href="../home/index.html">
-                <h1 id="marca">ZenForce</h1>
+    <section class="header">
+        <div id="cabecalho">
+            <div class="left-side">
+                <img id="logo" src="../imagens/logo.png" alt="">
+                <a href="../home/index.html">
+                    <h1 id="marca">ZenForce</h1>
+                </a>
+            </div>
+
+            <div id="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Buscar Produto">
+                <button onclick="search()" id="btn-pesquisa">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="right-side">
+                <a class="link-ico" href="">
+                    <i class="fas fa-user"></i>
+                    <span>Cadastre-se</span>
+                </a>
+            </div>
+
+            <div class="post-right">
+                <a class="link-ico" href="">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span>Carrinho de Compras</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="opcoes">
+            <a href="../opcoeshtml/wheyprotein.html">Whey Protein</a>
+            <a href="../opcoeshtml/creatina.html">Creatina</a>
+            <a href="../opcoeshtml/pretreino.html">Pré-Treino</a>
+            <a href="../opcoeshtml/moda.html">Moda</a>
+            <a href="">Notícias</a>
+        </div>
+    </section>
+    <!-- BANNER E POSTS QUADRADOS ------------------------------------------------------------------------------------------ -->
+    <div class="box-container">
+        <div class="box-banner">
+            <a href="../nutricionistahtml/nutri.html">
+                <img class="banner" src="../opcoeshtml/opt-imagens/zenpharma banner.png" alt="">
             </a>
         </div>
-
-        <div id="barra-pesquisa">
-            <input type="text" id="pesquisa" placeholder="Buscar Produto">
-            <button onclick="search()" id="btn-pesquisa">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
-
-        <div class="right-side">
-            <a class="link-ico" href="">
-                <i class="fas fa-user"></i>
-                <span>Cadastre-se</span>
+        <div class="box-square">
+            <a href="../produtoshtml/prod1.html">
+                <img class="square" src="../opcoeshtml/opt-imagens/post quadrado.png" alt="">
+            </a>
+            <a href="../produtoshtml/prod2.html">
+                <img class="square" src="../opcoeshtml/opt-imagens/post quadrado 2.png" alt="">
             </a>
         </div>
-
-        <div class="post-right">
-            <a class="link-ico" href="">
-                <i class="fas fa-cart-shopping"></i>
-                <span>Carrinho de Compras</span>
-            </a>
-        </div>
-    </div>
-
-    <div id="opcoes">
-        <a href="">Whey Protein</a>
-        <a href="">Creatina</a>
-        <a href="">Pré-Treino</a>
-        <a href="">Moda</a>
-        <a href="">Acessórios</a>
-    </div>
-
-    <div class="divpad" id="propaganda">
-        <img id="placeholder" src="../imagens/placeholder.png" alt="">
     </div>
 
     <section class="benefits">

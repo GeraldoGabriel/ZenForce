@@ -1,16 +1,45 @@
-#propaganda{
-    background-color: black;
+.box-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-    width: 98.8%;
 
-    padding: 10px;
-    margin-top: 10px;
-
+.box-banner {
+    width: 1000px;
+    height: fit-content;
+    margin-top: 30px;
     border-radius: 10px;
 }
-#placeholder{
+.banner {
     width: 100%;
-    height: 35vh;
+    height: auto;
     display: block;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+
 }
+.banner:hover {
+    transform: scale(1.02);
+}
+
+.box-square{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 230px;
+}
+.square {
+    border-radius: 10px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.square:hover {
+    transform: scale(1.02);
+}
+
+

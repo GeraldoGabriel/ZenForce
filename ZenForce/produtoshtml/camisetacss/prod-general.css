@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
 
-    border: 1px solid black;
+
     border-radius: 10px;
 
     background: linear-gradient(to right, #767676, #d9d9d9);
@@ -11,7 +11,7 @@
 }
 
 .product-inner img {
-    width: 470px;
+    width: 430px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -33,6 +33,7 @@
 .product-inner img:nth-child(1):hover, .product-inner img:nth-child(2):hover,.product-inner img:nth-child(3):hover
 ,.product-inner img:nth-child(4):hover{
     transform: scale(1.05);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .product-card {
@@ -98,10 +99,10 @@
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-#size-p:checked ~ label[for="size-p"],
-#size-m:checked ~ label[for="size-m"],
-#size-g:checked ~ label[for="size-g"],
-#size-gg:checked ~ label[for="size-gg"] {
+#size-p:checked + label[for="size-p"],
+#size-m:checked + label[for="size-m"],
+#size-g:checked + label[for="size-g"],
+#size-gg:checked + label[for="size-gg"] {
     background-color: yellowgreen;
     border-color: yellowgreen;
     color: white;
