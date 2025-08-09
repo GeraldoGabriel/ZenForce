@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container do formulário */
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do formulário */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilos dos inputs e selects */
+input,
+select {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3a9c9c;
+  outline: none;
+  box-shadow: 0 0 5px rgba(58, 156, 156, 0.6);
+}
+
+/* Estilo dos labels */
+label {
+  font-size: 1.1em;
+  color: #555;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Botão de envio */
+.btn-submit {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #2b7c7c;
+}
+
+/* Efeito de ampliação nos selects */
+select:hover,
+input:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para campos obrigatórios */
+input[required],
+select[required] {
+  background-color: #f8f8f8;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .btn-submit {
+    font-size: 1em;
+  }
+}
