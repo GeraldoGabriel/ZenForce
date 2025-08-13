@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+.ntc-conteiner-outer {
+    background: linear-gradient(to right, #000000, black,#666666, rgb(0, 0, 0));
+    border-radius: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+.ntc-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    background: linear-gradient(to right, rgb(255, 255, 255), yellowgreen) ;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+
+.ntc-boxes {
+    margin: 1em;
+    width: 30em;
+    padding: 0.1em;
+    border-radius: 8px;
+
+}
+
+.ntc-images {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, drop-shadow 0.3s ease;
+}
+.ntc-images:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}

@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+.container-outer {
+    border-radius: 1em;
+    margin-top: 1em;
+    padding: 2em;
+    background: linear-gradient(45deg, #000000, #ffffff);
+    border: 3px solid #ccc;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.gym-mistakes {
+    width: 45vw;
+    height: auto;
+    color: #ffffff;
+    /* flex: 1; */
+    padding: 1em;
+    background-color: #131313;
+    border-radius: 0.5em;
+}
+
+.gym-mistakes h1 {
+    text-align: center;
+
+    background-color: #ffd500;
+    padding: 0.5em;
+    color: black;
+    border-radius: 0.3em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.gym-mistakes p {
+    font-size: 1em;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.baby-boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    width: 30vw;
+}
+
+.baby-images {
+    width: 100%;
+    border-radius: 1em;
+    height: auto;
+
+    transition: transform 0.3s ease;
+}
+
+.baby-images:hover {
+    transform: scale(1.05);
+}
+
+.ntc-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #000000, #ffd500);
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em 0;
+}

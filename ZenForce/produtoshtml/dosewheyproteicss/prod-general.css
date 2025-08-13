@@ -1,12 +1,13 @@
 .product-page {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    padding: 40px;
-    gap: 40px;
+    flex-wrap: wrap; /* permite quebrar em telas menores */
+    padding: 4vw;
+    gap: 1vw;
 
-    margin-top: 10px;
-    border-radius: 10px;
+    margin-top: 1vw;
+    border-radius: 1vw;
 
     color: black;
     background: linear-gradient(to right, #e65656, #3d2828, #282828);
@@ -14,55 +15,60 @@
 }
 
 .benefits {
-    width: 500px;
+    /* flex: 1 1 300px; cresce, encolhe, mínimo 300px */
+    /* max-width: 500px; */
+    width: 23vw;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2vw;
 
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1.5vw;
+    padding: 2vw;
 
     background: linear-gradient(to right, #f5b7ae, #f5aaaa);
 }
 
 .single-benefit {
     justify-items: center;
-    text-align: justify;
+    text-align: left;
     align-items: center;
 }
 
 .single-benefit span {
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: clamp(1em, 1.3vw, 1.3em);
 }
 
 .single-benefit img {
-    width: 50px;
+    width: clamp(30px, 5vw, 50px);
     height: auto;
 }
 
 .product-image {
     display: flex;
-    flex: 1;
+    flex: 1 1 300px;
     justify-content: center;
     align-items: center;
 }
 
 .product-image img {
     text-align: center;
-    width: auto;
-    border-radius: 20px;
-    padding: 10px;
+    width: 30vw;
+    height: 30vw;
+    min-width: 200px;
+    /* height: auto; */
+    border-radius: 1.5vw;
+    padding: 1vw;
     background: linear-gradient(to left, #f5aeae, #dd8383);
 }
 
 .product-card {
-    border-radius: 10px;
-    padding: 20px;
-    height: fit-content;
+    height: 28vw;
+    border-radius: 1vw;
+    padding: 2vw;
 
-    margin-right: 30px;
+    margin-right: 2vw;
     text-align: left;
 
     background: linear-gradient(to right, #ffffff, #d9d9d9);
@@ -74,25 +80,25 @@
 }
 
 .product-card h2 {
-    font-size: 1.2em;
+    font-size: clamp(1em, 1.2vw, 1.2em);
     font-weight: bold;
 }
 
 .product-card a {
-    font-size: 0.9em;
+    font-size: clamp(0.8em, 0.9vw, 0.9em);
     color: black;
     width: fit-content;
     transition: transform 0.2s ease;
 }
 
 .price {
-    font-size: 2em;
+    font-size: clamp(1.5em, 2vw, 2em);
     color: #ff0000;
     font-weight: bold;
 }
 
 .parcelado {
-    font-size: 0.9em;
+    font-size: clamp(0.8em, 0.9vw, 0.9em);
     color: #333;
 }
 
@@ -101,34 +107,30 @@
     justify-content: center;
     align-items: center;
     background-color: #cc0000;
-    /* background: linear-gradient(red, yellow, green); */
     border: none;
-    padding: 12px 20px;
+    padding: clamp(8px, 1vw, 12px) clamp(12px, 2vw, 20px);
     color: white;
-    /* color: black; */
     font-weight: bold;
-    font-size: 1em;
+    font-size: clamp(0.9em, 1vw, 1em);
     border-radius: 6px;
     cursor: pointer;
-    margin: 15px auto 0 auto;
+    margin: 10vw auto 0 auto;
 }
 
 .stock {
-    margin-top: 10px;
+    margin-top: 1vw;
     color: rgb(128, 0, 0);
 }
 
 .prod-icon {
     border: solid 1px black;
     border-radius: 50%;
-    padding: 10px;
+    padding: clamp(6px, 1vw, 10px);
     background-color: black;
     filter: brightness(1.5) hue-rotate(270deg);
 }
 
 #mockup {
-    width: 600px;
-    height: 600px;
     transition: transform 0.3s ease;
 }
 
@@ -136,3 +138,19 @@
     transform: scale(1.05);
 }
 
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-card {
+        margin-right: 0;
+    }
+
+    .benefits {
+        max-width: 100%;
+    }
+}
