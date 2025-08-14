@@ -2,11 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
-    gap: 40px;
+    padding: 2.5rem;
+    gap: 2.5rem;
 
-    margin-top: 10px;
-    border-radius: 10px;
+    margin-top: 0.6rem;
+    border-radius: 0.6rem;
 
     background: linear-gradient(to right, #e65656, #ae4747, #282828);
     color: black;
@@ -14,13 +14,14 @@
 }
 
 .benefits {
-    width: 500px;
+    width: 30vw;
+    min-width: 260px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.5rem;
 
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1.2rem;
+    padding: 1.2rem;
 
     background: linear-gradient(to right, #f5b7ae, #f5aaaa);
 }
@@ -28,17 +29,17 @@
 .single-benefit {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .single-benefit span {
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .single-benefit img {
-    width: 50px;
+    width: 3rem;
     height: auto;
 }
 
@@ -52,47 +53,49 @@
 .product-image img {
     text-align: center;
     width: auto;
-    border-radius: 20px;
-    padding: 10px;
+    max-width: 90%;
+    border-radius: 1.2rem;
+    padding: 0.6rem;
     background: linear-gradient(to left, #f5aeae, #dd8383);
 }
 
 .product-card {
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.6rem;
+    padding: 1.2rem;
     height: fit-content;
 
-    margin-right: 50px;
+    margin-right: 3vw;
     text-align: left;
 
     background: linear-gradient(to right, #ea7878, #c2c2c2);
 
     font-family: Helvetica, Arial, sans-serif;
 }
+
 .product-card:hover {
-    filter: drop-shadow(4px 4px  2px rgba(255, 255, 255, 0.1));
+    filter: drop-shadow(0.25rem 0.25rem 0.12rem rgba(255, 255, 255, 0.1));
 }
 
 .product-card h2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .product-card a {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: black;
     width: fit-content;
     transition: transform 0.2s ease;
 }
 
 .price {
-    font-size: 2em;
+    font-size: 2rem;
     color: #ff0000;
     font-weight: bold;
 }
 
 .parcelado {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: #333;
 }
 
@@ -101,36 +104,89 @@
     justify-content: center;
     align-items: center;
     background-color: #cc0000;
-    /* background: linear-gradient(red, yellow, green); */
     border: none;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     color: white;
-    /* color: black; */
     font-weight: bold;
-    font-size: 1em;
-    border-radius: 6px;
+    font-size: 1rem;
+    border-radius: 0.4rem;
     cursor: pointer;
-    margin: 15px auto 0 auto;
+    margin: 1rem auto 0 auto;
 }
 
 .stock {
-    margin-top: 10px;
+    margin-top: 0.6rem;
     color: rgb(128, 0, 0);
 }
 
 .prod-icon {
-    border: solid 1px black;
+    border: solid 0.06rem black;
     border-radius: 50%;
-    padding: 10px;
+    padding: 0.6rem;
     background-color: black;
     filter: brightness(1.5) hue-rotate(270deg);
 }
 
 #mockup {
-    height: 600px;
+    height: 37.5rem;
+    max-width: 100%;
     transition: transform 0.3s ease;
 }
 
 #mockup:hover {
     transform: scale(1.05);
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .product-page {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .benefits {
+        width: 80%;
+    }
+
+    .product-card {
+        margin-right: 0;
+        width: 80%;
+    }
+
+    #mockup {
+        height: 30rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .product-page {
+        padding: 1.2rem;
+        gap: 1.2rem;
+    }
+
+    .benefits {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .single-benefit img {
+        width: 2.5rem;
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    #mockup {
+        height: auto;
+    }
 }

@@ -5,7 +5,7 @@
 }
 
 /* Corpo da página */
-body {
+.mid-section {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   display: flex;
@@ -24,7 +24,7 @@ body {
   text-align: center;
 }
 
-h1 {
+.form-container h1 {
   font-size: 2em;
   color: #333;
   margin-bottom: 20px;

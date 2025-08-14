@@ -1,13 +1,37 @@
 .f-general {
     margin-top: 2vh;
     padding: 2vw 4vw;
-    border-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 
-    background: linear-gradient(90deg, gray, black);
+    background: linear-gradient(90deg, rgb(158, 158, 158), black, black);
 
-    font-family: Helvetica, Arial, sans-serif;
     color: white;
 
+    display: flex;
+    align-items: center;
+}
+
+.f-developers {
+    background: linear-gradient(90deg,  yellowgreen);
+    border-radius: 1em;
+
+    width: 20vw;
+    height: 14vw;
+    filter: drop-shadow(10px 15px 0px white, 5px 10px 0px red);
+    /* filter: ; */
+}
+.f-d-title {
+    text-align: left;
+    margin-left: 1em;
+    font-size: 1.6rem;
+}
+.f-d-students {
+    font-size: 1.4rem;
+    margin-left: 1em;
+}
+.f-d-students span {
+    margin-bottom: 2.5em;
 }
 
 .f-elements {

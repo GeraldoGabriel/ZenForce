@@ -1,9 +1,8 @@
 .benefits {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
     box-sizing: border-box;
     gap: 2vw;
     padding: 2vw;
@@ -16,7 +15,7 @@
     border: 0.1em solid #ccc;
     border-radius: 3vw;
     padding: 1vw 2vw;
-    width: 22vw;
+    width: 20vw;
     min-width: 14em;  
     max-width: 21em; 
     box-shadow: 0 0.2vw 0.6vw rgba(0,0,0,0.1);
